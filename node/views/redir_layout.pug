@@ -1,0 +1,22 @@
+doctype html
+html
+    head
+        title= tpl_bodytitle
+        - var redir = tpl_redirurl;
+        - var redircontent='0; URL=http://'+redir+'';
+        meta(http-equiv="refresh" content=redircontent)
+        meta(name='viewport',  charset="utf-8", content='width=device-width, initial-scale=1.0')
+        link(rel='stylesheet', href=tpl_url_home+'/css/base.css')
+        link(rel='stylesheet', href=tpl_url_home+'/css/style.css')
+        link(rel='stylesheet', href=tpl_url_home+'/css/color.css')
+        link(rel='stylesheet', href=tpl_url_home+'/css/awesome.css')
+        link(type="text/javascript", src=tpl_url_home+'js/jquery.min.js')
+        link(type="text/javascript", src=tpl_url_home+'/js/html5shiv.min.js')
+    body
+        link(type="text/javascript", src=tpl_url_home+'/js/http.js')
+        include ./inc_header.pug
+
+        block content
+
+        include ./inc_footer.pug
+

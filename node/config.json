@@ -1,0 +1,10 @@
+{ 
+	"LOG_LEVEL":"INFO", 
+	"HTTP_PORT":5055, 
+	"HTTP_HOST":localhost, 
+	"SENDER_HOMECODE":"11100", 
+	"SENDERUSB_BIN":"/usr/bin/sispmctl", 
+	"SENDER433_BIN":"/opt/smarthome/433send/raspberry-remote/send", 
+	"URL_BASE":"", 
+	"DEV_MODE":false 
+}
